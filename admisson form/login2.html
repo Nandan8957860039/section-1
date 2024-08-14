@@ -1,20 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> contect web page useing html and css</title>
-</head>
-<body>
-    <main><div class="card">
-        <h4 class="form-title"> Contact here </h4>
-        <><li>Home</li>
-        <li>Home</li></ol>
-        <li>Home</li></ol>
-        <li>Home</li></ol>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <style>
+        * {
+            font-family: Roboto;
+            /* font-size: 20px; */
+        }
 
-    </div>
-</main>
-    
+        .text-input {
+            padding: 15px 10px;
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            background-color: rgb(255, 0, 221);
+            color: black;
+            padding: 10px;
+            border-radius: 5
+        }
+
+        .card {
+            border: 2px solid rgba(0, 45, 248, 0.24);
+            /* width: 150%; */
+
+            border-radius: 150px;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 25px;
+            box-shadow: 5px 5px 5px 5px;
+            background-color: rgb(208, 204, 224);
+
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* width: 100vh; */
+        }
+
+        .img {
+            min-height: auto;
+            min-width: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <h3>Digipodium welcomes the mern stack develpers <br>Hurry up! limited offer for the students</h3>
+            <h4 class="form-title"> Contact here (digipodium office)</h4>
+            <img src="c:\Users\bajpa\Downloads\images.png" alt="cvbd">
+            <ol>
+                <li>Home</li>
+
+                <li> phone :8957860039</li>
+                <li> linkdin:digipods</li>
+                <li>Address:Tej plaza</li>
+                <li>whatsaap group:mern stackstudent2024 aug </li>
+            </ol>
+            <label>Student name</label>
+            <input type="text" minlength="4" required><br><br>
+            <label for="">middle name</label>
+            <input type="text" minlength="4" required>
+            <br><label for="">aadress</label>
+            <textarea rows="5"></textarea>
+
+            <br><br>
+            <label>select course</label>
+            <select><br><br>
+                <option> mern stack</option>
+                <option>data science</option>
+                <option>data analytics</option>
+                <option>big data</option>
+                <option>data science</option>
+            </select>
+            <br><br>
+            <label>college name</label>
+            <input type="text" list="college">
+            <datalist id="college">
+                <option>RRIMT</option>
+                <option>SMRIT</option>
+                <option>RR</option>
+                <option>LU</option>
+                <option>BBDU</option>
+
+            </datalist><br><br>
+            <label>email</label>
+            <input class="text-input" type="text"><br><br>
+            <label>password</label><br><br>
+            <input class="text-input" type="text" required><br><br>
+            <button class="submit-btn">submit</button>
+            <a class="link" style="text-align:center" href="#">sign.in</a><br><br>
+            <p>or</p>
+            <a class="link" style="text-align:center" href="#"> login here</a><br><br>
+            <a class="link" style="text-align:center" href="#"> forgetpassword? <br>click here
+            </a><br><br>
+            <div class="card">
+                <h6>contact us</h6>
+                <img width="50" src="c:\Users\bajpa\Downloads\download (1).jpg" alt="facebook">
+                <img src="c:\Users\bajpa\Downloads\github.jpg" alt="github">
+                <img src="c:\Users\bajpa\Downloads\whatsaap image.jpg" alt="whatsaap">
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
 </body>
+
 </html>
