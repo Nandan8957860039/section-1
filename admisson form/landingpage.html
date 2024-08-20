@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
 
     <style>
-        *{
+        * {
             font-family: Montserrat;
         }
-        .hero-section{
+
+        .hero-section {
             border: 2px solid red;
             height: 60vh;
             display: flex;
@@ -19,53 +23,164 @@
             align-items: center;
             padding: 0 20%;
             text-align: center;
-            background-image: url(download.png);
+            background-image: url(image4.jpg);
             background-size: cover;
-            background-position:center ;
+            background-position: center;
 
 
         }
 
 
-        body{
+        body {
             margin: 0;
         }
-        .btn{padding: 10px;
+
+        .btn {
+            padding: 10px;
             border-radius: 5px;
             border: none;
 
 
         }
-        .primary-btn{
+
+        .card-container {
+            display: flex;
+            /* flex-direction: row-reverse; */
+            justify-content: flex-end;
+            justify-content: space-between;
+            /* height: 50vh; */
+            /* align-items: flex-end; */
+            background-image: url(image4.jpg);
+
+        }
+
+
+
+        .primary-btn {
             background-color: blue;
             color: aqua;
             border: 2px solid blueviolet;
         }
-        .secondry-btn{
+
+        .secondry-btn {
             background-color: white;
             color: blueviolet;
             border: 2px solid blueviolet;
         }
+
+        .feature-section {
+            padding: 100px 200px;
+
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px;
+            color: #00aaee;
+
+
+        }
+
+        .card:hover {
+            transform: translate(-20px, -20px);
+            background-color: rgb(199, 22, 22);
+            color: beige;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        .service-section{
+            border: 2px solid red;
+            padding: 100px 200px; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-image: url(image4.jpg);
+
+
+        }
+        .service-img{
+            width: 100%;
+        }
+        .service-info{
+            border: 2px solid green;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <main>
         <section class="hero-section ">
             <h1 class="hero-title"> welcome to website</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cum enim tenetur accusantium vel? Iure libero quas animi, iste voluptate quasi dolores dolore nisi autem accusantium vel temporibus, amet et.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cum enim tenetur accusantium vel? Iure
+                libero quas animi, iste voluptate quasi dolores dolore nisi autem accusantium vel temporibus, amet et.
+            </p>
             <div>
                 <button class="btn primary-btn">Get started</button>
                 <button class="btn secondry-btn"> Learn More</button>
             </div>
-        
-
 
         </section>
+        <section class="feature-section">
+            <h1 class="section-title"> our features</h1>
 
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Fast service provideing by me</h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus fugiat maxime
+                        numquam aspernatur quidem officia impedit perspiciatis quibusdam reiciendis dolor in nulla, eos
+                        vel, consectetur at quae eaque iusto magnam doloremque minima nesciunt eligendi!</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Fast service provideing by me</h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus fugiat maxime
+                        numquam aspernatur quidem officia impedit perspiciatis quibusdam reiciendis dolor in nulla,
+                        eos
+                        vel, consectetur at quae eaque iusto magnam doloremque minima nesciunt eligendi!</p>
+
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Fast service provideing by me</h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus fugiat
+                        maxime
+                        numquam aspernatur quidem officia impedit perspiciatis quibusdam reiciendis dolor in
+                        nulla, eos
+                        vel, consectetur at quae eaque iusto magnam doloremque minima nesciunt eligendi!</p>
+
+                </div>
+
+        </section>
+        <section class="service-section">
+
+            <div class="service-img">
+                "<img src="download (3).jpg" alt=" service">
+
+
+            </div>
+            <div class="service-info">
+                <h3> Service title 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, saepe unde ducimus vel ipsa cum autem quae aliquid voluptates quos cumque ratione officia rerum! Atque molestiae dolore corporis accusamus esse?</p>
+                <button class="btn primary-btn"> learn more</button>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
-    
+
 </body>
-</html>
+
+</html> 
